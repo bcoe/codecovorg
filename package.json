@@ -1,0 +1,29 @@
+{
+  "name": "codecovorg",
+  "version": "0.1.0",
+  "description": "wrapper for codecov that fetches repo tokens based on API key",
+  "main": "index.js",
+  "scripts": {
+    "test": "c8 mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bcoe/codecovorg.git"
+  },
+  "keywords": [
+    "codecov",
+    "org",
+    "api",
+    "token"
+  ],
+  "author": "Ben Coe <bencoe@google.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bcoe/codecovorg/issues"
+  },
+  "homepage": "https://github.com/bcoe/codecovorg#readme",
+  "dependencies": {
+    "codecov": "^3.6.5",
+    "yargs": "^15.1.0"
+  }
+}
