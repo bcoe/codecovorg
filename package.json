@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "description": "wrapper for codecov that fetches repo tokens based on API key",
   "main": "index.js",
+  "bin": "./bin/codecovorg.js",
   "scripts": {
-    "test": "c8 mocha test.js"
+    "test": "c8 mocha test.js",
+    "posttest": "semistandard",
+    "fix": "semistandard --fix"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/bcoe/codecovorg.git"
-  },
+  "files": [
+    "bin/",
+    "index.js"
+  ],
+  "repository": "bcoe/codecovorg",
   "keywords": [
     "codecov",
     "org",
@@ -24,6 +28,14 @@
   "homepage": "https://github.com/bcoe/codecovorg#readme",
   "dependencies": {
     "codecov": "^3.6.5",
-    "yargs": "^15.1.0"
+    "node-fetch": "^2.6.0",
+    "yargs": "^15.3.0-beta.0"
+  },
+  "devDependencies": {
+    "c8": "^7.1.0",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.0",
+    "nock": "^12.0.2",
+    "semistandard": "^14.2.0"
   }
 }
