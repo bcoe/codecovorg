@@ -89,6 +89,7 @@ const argv = require('yargs')
   .option('slug', {
     alias: 'r',
     type: 'string',
+    default: process.env.GITHUB_REPOSITORY,
     description: 'Specify repository slug for Enterprise ex. owner/repo'
   })
   .option('url', {
