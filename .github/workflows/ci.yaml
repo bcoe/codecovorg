@@ -36,4 +36,4 @@ jobs:
           node-version: 13
       - run: npm install
       - run: npm test
-      - run: ./node_modules/.bin/c8 report --reporter=text-lcov | npx codecovorg -a ${{ secrets.CODECOV_API_KEY }} --pipe
+      - run: ./node_modules/.bin/c8 report --reporter=text-lcov | npx codecovorg -a ${{ secrets.CODECOV_API_KEY }} -r {{ GITHUB_REPOSITORY }} --pipe
