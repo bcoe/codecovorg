@@ -11,7 +11,9 @@ populate a `token` for `codecov`.
 ### with c8
 
 ```bash
-c8 report --reporter=text-lcov | npx codecovorg -a ${{ secrets.CODECOV_API_KEY }} --pipe
+c8 report --reporter=text-lcov | npx codecovorg \
+  -a $CODECOV_API_KEY \
+  -r $GITHUB_REPOSITORY --pipe
 ```
 
 ## License
