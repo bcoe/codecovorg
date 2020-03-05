@@ -1,6 +1,6 @@
 {
   "name": "codecovorg",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "wrapper for codecov that fetches repo tokens based on API key",
   "main": "index.js",
   "bin": "./bin/codecovorg.js",
